@@ -241,14 +241,33 @@ const calc = (a, b) => {
 };
 
 const uahCurs = 3;
-const usdCurs =38;
-const eurCurs =45;
+const usdCurs = 38;
+const eurCurs = 45;
+const discount = 0.9;
 
 function converter(amout, Curs) {
-    console.log(Curs * amout);
+    return Curs * amout;
 }
 
-converter(500, usdCurs);
-converter(500, uahCurs);
-converter(500, eurCurs);
+function promotion(result) {
+    console.log(result * discount);
+}
+
+/* promotion(converter(500, usdCurs));
+promotion(converter(500, uahCurs));
+promotion(converter(500, eurCurs)); */
+
+const res = converter(500, usdCurs);
+promotion(res);
+
+function test() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+        if (i === 3) return 
+    }
+    console.log('Done');
+}
+
+test(); 
+
 
