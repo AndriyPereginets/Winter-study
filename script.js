@@ -71,7 +71,7 @@ let numberOfFilms = +prompt ('Скільки фільмів ви вже пере
 
 
 
-   let num = 50;
+  /*  let num = 50; */
 
   /*  while (num <= 55) {
         console.log(num);
@@ -202,3 +202,53 @@ for (let i = 1; i < leghth; i++) {
     for (let a of i) {
         console.log(a);
     } 
+
+ let num = 20;
+ function showFirstMessage(text) {
+    console.log(text);
+    num = 10;
+    }
+ 
+ showFirstMessage("Hello kitty!");
+ console.log(num);
+
+/*  function calc(a, b) {
+    return (a + b);
+ }
+
+ console.log(calc(4, 3));
+ console.log(calc(5, 3));
+ console.log(calc(10, 2));
+ console.log(calc(6, 8)); */
+
+ function ret() {
+    let num = 50;
+    return num;
+ }
+
+ const anotherNum = ret();
+ console.log(anotherNum);
+
+const logger = function() {
+    console.log('Hello!');
+}
+
+logger();
+
+const calc = (a, b) => {
+    console.log('1');
+    return a + b;
+};
+
+const uahCurs = 3;
+const usdCurs =38;
+const eurCurs =45;
+
+function converter(amout, Curs) {
+    console.log(Curs * amout);
+}
+
+converter(500, usdCurs);
+converter(500, uahCurs);
+converter(500, eurCurs);
+
