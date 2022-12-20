@@ -32,7 +32,7 @@ console.log(2*4 == 8); */
 /* && - І
 || - або */
 
-let numberOfFilms = +prompt ('Скільки фільмів ви вже переглянули','');
+/* let numberOfFilms = +prompt ('Скільки фільмів ви вже переглянули','');
 
  const personalMovieDB = {
     count: numberOfFilms,
@@ -67,7 +67,7 @@ let numberOfFilms = +prompt ('Скільки фільмів ви вже пере
     }
 
 
-    console.log(personalMovieDB);
+    console.log(personalMovieDB); */
 
 
 
@@ -130,9 +130,9 @@ for (let i = 1; i < leghth; i++) {
     }
 
 
-    for (let i = 5; i <=10; i++) {
+    /* for (let i = 5; i <=10; i++) {
     console.log(i);
-    }
+    } */
 
     for (let i = 20; i >= 10; i--) {
         if (i === 13) {
@@ -169,23 +169,23 @@ for (let i = 1; i < leghth; i++) {
 
     
 
-    for (let i = 2; i <= 16; i++) {
+ /*    for (let i = 2; i <= 16; i++) {
         if (i % 2 === 0) {
             continue;
         } else {
             console.log(i);
         }
-    }
+    } */
 
 
-    let i = 2;
+  /*   let i = 2;
     while (i < 16) {
             i++;
         if (i % 2 === 0) {
             continue;
         } 
        console.log(i);      
-    }
+    } */
    
 
     const Numbers = [];
@@ -195,7 +195,7 @@ for (let i = 1; i < leghth; i++) {
     }
 
     console.log(Numbers);
-    return(Numbers); */
+    return(Numbers);
 
 
     let i = [1, 2, 3, 4,];
@@ -269,5 +269,43 @@ function test() {
 }
 
 test(); 
+
+
+function sayHello (name) {
+    return `Привіт, ${name}!`;
+}
+
+sayHello('Андрій');
+console.log(sayHello('Андрій'));
+
+
+const str = "test";
+/* const arr = [1, 3, 5];
+
+console.log(str[2]); */
+
+console.log(str.toUpperCase());
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit"));
+
+const logg = "Why are you runnig?";
+
+console.log(logg.slice(12, 18));
+
+console.log(logg.substring(12, 18));
+
+console.log(logg.substr(12, 6));
+
+
+const numb = 12.34;
+console.log(Math.round(numb));
+
+for (let i = 5; i <=10; i++) {
+    console.log(i);
+}
+
+
 
 
