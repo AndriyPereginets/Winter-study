@@ -133,7 +133,7 @@ for (let i = 1; i < leghth; i++) {
     /* for (let i = 5; i <=10; i++) {
     console.log(i);
     } */
-
+/* 
     for (let i = 20; i >= 10; i--) {
         if (i === 13) {
             break;}
@@ -163,7 +163,7 @@ for (let i = 1; i < leghth; i++) {
             }
                  console.log(i);
             }
-
+ */
 
 
 
@@ -188,7 +188,7 @@ for (let i = 1; i < leghth; i++) {
     } */
    
 
-    const Numbers = [];
+  /*   const Numbers = [];
 
     for (let i = 5; i < 11; i++) {
         Numbers[i - 5] = i;
@@ -211,7 +211,7 @@ for (let i = 1; i < leghth; i++) {
  
  showFirstMessage("Hello kitty!");
  console.log(num);
-
+ */
 /*  function calc(a, b) {
     return (a + b);
  }
@@ -220,7 +220,7 @@ for (let i = 1; i < leghth; i++) {
  console.log(calc(5, 3));
  console.log(calc(10, 2));
  console.log(calc(6, 8)); */
-
+/* 
  function ret() {
     let num = 50;
     return num;
@@ -257,7 +257,7 @@ function promotion(result) {
 promotion(converter(500, uahCurs));
 promotion(converter(500, eurCurs)); */
 
-const res = converter(500, usdCurs);
+/*const res = converter(500, usdCurs);
 promotion(res);
 
 function test() {
@@ -284,7 +284,7 @@ const str = "test";
 
 console.log(str[2]); */
 
-console.log(str.toUpperCase());
+/* console.log(str.toUpperCase());
 
 const fruit = "Some fruit";
 
@@ -304,8 +304,64 @@ console.log(Math.round(numb));
 
 for (let i = 5; i <=10; i++) {
     console.log(i);
+} */ 
+
+
+function calculateVolumeAndArea(Number) {
+    let area = [6 * (calculateVolumeAndArea * calculateVolumeAndArea)];
+    let extent = [calculateVolumeAndArea * calculateVolumeAndArea * calculateVolumeAndArea];
+
 }
 
+function learnJS(lang, callback) {
+    console.log(`Я пробою вчити: ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log(`Я пройшов урок!!!!`);
+}
+
+learnJS('JavaScript', done);
+
+
+const options = {
+    name: 'test',
+    widht: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log('Test');
+    }
+};
+
+options.makeTest();
+
+const {border, bg} = options.colors; /* - деструктизація */
+console.log(border);
+
+console.log(Object.keys
+    (options).length);   
+
+/* delete options.name; */
+
+let counter = 0;
+for (let key in options) {
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Властивість ${i} має значення ${options[key][i]}`);
+            counter++; 
+        }
+    } else {
+       console.log(`Властивість ${key} має значення ${options[key]}`);
+       counter++;  
+    }
+}
+
+console.log(counter);
 
 
 
