@@ -307,12 +307,6 @@ for (let i = 5; i <=10; i++) {
 } */ 
 
 
-function calculateVolumeAndArea(Number) {
-    let area = [6 * (calculateVolumeAndArea * calculateVolumeAndArea)];
-    let extent = [calculateVolumeAndArea * calculateVolumeAndArea * calculateVolumeAndArea];
-
-}
-
 function learnJS(lang, callback) {
     console.log(`Я пробою вчити: ${lang}`);
     callback();
@@ -362,6 +356,21 @@ for (let key in options) {
 }
 
 console.log(counter);
+
+
+function calculateVolumeAndArea(num) {  
+    let area = [6 * (num * num)];
+    let extent = [num * num * num];
+    if (typeof num !== "number" || num < 0 || !Number.isInteger(num)) {
+        console.log('При обрахунку відбулась помилка!');
+    } else {
+        console.log(`Об'єм куба: ${extent}, площа: ${area}`);
+    }
+   
+}
+
+calculateVolumeAndArea(5.5);
+fgkdfnbgkjdbjkjk
 
 
 
