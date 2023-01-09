@@ -358,19 +358,5 @@ for (let key in options) {
 console.log(counter);
 
 
-function calculateVolumeAndArea(num) {  
-    let area = [6 * (num * num)];
-    let extent = [num * num * num];
-    if (typeof num !== "number" || num < 0 || !Number.isInteger(num)) {
-        console.log('При обрахунку відбулась помилка!');
-    } else {
-        console.log(`Об'єм куба: ${extent}, площа: ${area}`);
-    }
-   
-}
-
-calculateVolumeAndArea(5.5);
-fgkdfnbgkjdbjkjk
-
 
 
