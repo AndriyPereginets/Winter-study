@@ -52,9 +52,103 @@ function getTimeFromMinute(time) {
             hoursStr = 'годин';
     
     }
-    console.log(`Це ${hours} ${hoursStr} та ${minute} хвилин`)
+    console.log(`Це ${hours} ${hoursStr} та ${minute} хвилин`);
     
     
 }
 
-getTimeFromMinute(410);
+getTimeFromMinute(560);
+
+
+const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ua', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    }
+};
+
+/* function showExperience () {
+    const {exp} = personalPlanPeter.skills;
+    console.log(exp);
+} */
+
+
+
+/* showExperience(personalPlanPeter); */
+
+/* function showProgramingLangs () {
+   for (let dev in personalPlanPeter) {
+    for ( let programs in personalPlanPeter[dev]) {
+        console.log(programs);
+    }
+   }
+}  */
+function showProgramingLangs () {
+    const a = personalPlanPeter.skills.programmingLangs.js,
+    b = personalPlanPeter.skills.programmingLangs.php;
+     console.log(a, b);
+} 
+
+showProgramingLangs();
+
+
+const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+function showFamily(arr) {
+    if (arr == '') {
+        console.log('Семья пуста');
+    }
+    else {
+        console.log(`Семья состоит из: ${arr}`);  
+}
+}
+
+showFamily(family);
+
+const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+function standardizeStrings(arr) {
+    arr.forEach(city => {
+        console.log(city.toLowerCase()); 
+    });
+   
+}
+standardizeStrings(favoriteCities);
+
+const someString = 'This is some strange string';
+
+function reverse(str) {
+    if (typeof(str) !== 'string') {
+        console.log('Помилка');
+    }
+    else
+    {const reverse = Array.from(str).reverse().join('');
+console.log(reverse); }
+}
+
+reverse(someString);
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+    let str = '';
+    arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
+
+    for (let i = 0; i < arr.length; i++) {
+             if (arr[i] === missingCurr) {
+                continue;
+            }
+             str += `${arr[i]}\n`;
+         }
+        console.log(str);
+    }
+
+
+availableCurr([...baseCurrencies, ...additionalCurrencies], 'RUB');
